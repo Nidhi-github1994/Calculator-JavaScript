@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="calculatorcss.css">
+        <script language="javascript" src="calculatorjs.js"></script>
+        <title>Calculator</title>
+    </head>
+    
+    <body>
+        
+    <main class="container">
+      <div id="calculator">
+        <header class="top-part">
+          <div class="top">
+            <h5 class="branding"></h5>
+    
+          </div>
+          <div class="type">
+              <label class="calculator-chosen">CALCULATOR</label>
+          </div>
+            <form>
+          <div class="screen">
+            <div class="history-screen">
+              <input id="history" name="history" type="text" disabled>
+            </div>
+            <div class="main-screen">
+              <input id="main" name="main" type="text" disabled>
+            </div>
+          </div>
+            </form>
+          <div class="bottom">
+            <div class="memory">
+
+
+            </div>
+          </div>
+        </header>
+        <section class="bottom-part">
+          <div class="features">
+            <div class="sub-menu">
+              <div class="row">
+                  <input type="button" id="sin" class="button sploperator" value="sin" onclick="insertSpelOperator('sin')">
+                  <input type="button" id="cos" class="button sploperator" value="cos" onclick="insertSpelOperator('cos')">
+                  <input type="button" id="tan" class="button sploperator" value="tan" onclick="insertSpelOperator('tan')">
+                  <input type="button" id="log" class="button sploperator" value="log" onclick="insertSpelOperator('log')">
+
+                </div>
+                <div class="row">
+                <input type="button" id="percentage" class="button operator" value="%" onclick="percentage()">
+                  
+                <button id="sqrt" class="button operator" data-value="sqrt" onclick="insertSpelOperator('sqrt')">
+                  <img class="icon icons8-Square-Root" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABP0lEQVRYR+3V4S0FQRQF4O9VgApQATrQASpABXSAClABOqCCRwWoABWgAnKTnWSzeV5mdkf2z55fm83sPWfPuXfuzMiYjcxvEjA5UNuBd6z/0dgLuWoK2MV8yVT9u4BbHOIC57njXcuBVXw2pJuIKLJQS8ARbvCA/Szm5lAtAS/YwjEiimzUELCNZ3wjoihCDQFXOME1TovYqbILvrCCHUQURRjqQGq+V0QUxVgm4KdVLcYqxquLe+z1ab5UKFdAnO92+AbemkJriCiKkRNBsrnrQjTcJe4QZ3ohR0AUTkum7UJ6d4CIohdyBXRdSIvnAxFFb+QKaLsQfxzXbfHiWaSyREBy4bEZubj1ihbPUAFBGLnHpRN4QkQxCCUOBFHs+bOGsXjxDHUgvk8upOdBfx8flzowmLBbYBIwOTC6A7+1/zEhMa617wAAAABJRU5ErkJggg==">
+                </button>
+                <button id="sqr-rev" class="button operator" data-value="sqr" onclick="insertSpelOperator('sqr')">
+                  <span class="x-sign">
+                    <sub>x</sub>
+                  </span>
+                  <span>
+                    <sup>2</sup>
+                  </span>
+                </button>
+                <input type="button" id="exponantion" class="button operator" value="e" onclick="insertSpelOperator('e')">
+                
+              </div>
+            </div>
+            <div class="main-menu">
+              <div class="row">
+                <input type="button" id="clear-entry" class="button operator" value="π" onclick="insertSpelOperator('π')">
+                <input type="button" id="clear" class="button operator" value="C" onclick="clearscreen();">
+                <button id="clear-element" class="button image sign operator" data-value="CS" onclick="back()">
+                  <img class="icon icons8-Clear-Symbol" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDklEQVRYR+2W4Q3CIBSErxu4iY6gm+hmbqIj6CZuUHNJMeQFeAelaUzoT8LjPo570Ak7f9PO+hgAw4G/cuAA4AHg1KFzfhtXHegpTv4qgFj8DeAM4NPowrzUyQA9xaldBaCIc451IzUWDJMBFPE7gCOASwQR6l4AboljkgAUcc55LgAUIwS/0CW5rLgAinjYmIXgOFu0FNQiQI14CoJjXpe4ANZWr93s/RCOI1cnHYEKYR2jAwxlCcIF4CKpgKVazQaOtR68BKBCsA0ZuvhmDPB04drahrmUx/0ez9nkIqqBqHkW5COIF1UyoUI0AdhMqGKlefJrmHNiLUQTwFrRZL36R7SJOBcdAMOB3R34AqM1YCEu+sgCAAAAAElFTkSuQmCC">
+                </button>
+                <input type="button" id="divide" class="button operator" value="/" onclick="insertOperator('/')">
+                  
+              </div>
+              <div class="row">
+                <input type="button" class="button number" role="button" value="7" onclick="insertNumber(7)">
+                <input type="button" class="button number" role="button" value="8" onclick="insertNumber(8)">
+                <input type="button" class="button number" role="button" value="9" onclick="insertNumber(9)">
+                <input type="button" id="multiply" class="button operator" value="*" onclick="insertOperator('*')">
+                  
+              </div>
+              <div class="row">
+                <input type="button" class="button number" role="button" value="6" onclick="insertNumber(6)">
+                <input type="button" class="button number" role="button" value="5" onclick="insertNumber(5)">
+                <input type="button" class="button number" role="button" value="4" onclick="insertNumber(4)">
+                <input type="button"  id="minus" class="button operator" value="-" onclick="insertOperator('-')">
+                  
+              </div>
+              <div class="row">
+                <input type="button" class="button number" role="button" value="1" onclick="insertNumber(1)">
+                <input type="button" class="button number" role="button" value="2" onclick="insertNumber(2)">
+                <input type="button" class="button number" role="button" value="3" onclick="insertNumber(3)">
+                <input type="button" id="plus" class="button operator" value="+" onclick="insertOperator('+')">
+                  
+              </div>
+              <div class="row">
+                <button class="button image sign operator" onclick="plusMinus()">
+                  <img class="icon icons8-Plus-Minus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAYUlEQVRYR+2VMQ4AIAgD4f+P1gUdCakx1VB3pL0UcCM/J/c3CfiewIgMwUbgwmgsASLQg8ByiW7tdNIqY0gXkDnvkQEREIGnCaDLaddVFtFxk+wDCagQoN8CugCFUASuEpjXIBIhP3OSdgAAAABJRU5ErkJggg==">
+                </button>
+                <input type="button" class="button number" value="0" onclick="insertNumber(0)">
+                <input type="button" id="dot" class="button operator" value="." onclick="decimal()">
+                <input type="button" id="equal" class="button operator" value="=" onclick="equal()">
+                  
+                </div>
+              </div>
+            
+          </div>
+        </section>
+      </div>
+</main>
+<footer>copyright 2020 nidhiparekh</footer>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,16 @@
+To perform the Special math operations
+
+1) Sin/Cos/tan/log/sqrt/sqr - First Enter any number then click button 
+	 		      Without entering number button can not be clicked
+
+2) expo  - First enter the number wich is base and then click 'e' 
+	   Enter the number which is exponent and click '='
+
+3) Pi - Directly clicking on Pi will give 3.14 as value
+	Enter number and click on Pi then the number will multiply with the Pi
+
+4) % -  Enter any number which is principle amount 
+	Enter any operator (+,-,*,/) 
+	Enter number which is percent value 
+	Click on the '%' button this will give you the percentage value 
+	Click '=' that gives the evaluation of percentage value and principle value 
